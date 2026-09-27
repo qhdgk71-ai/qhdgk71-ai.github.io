@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nudge Me | 고객 지원</title>
+    <title>Nudge Me | 고객 지원 및 개인정보처리방침</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif; }
-        body { background-color: #f8f9fa; color: #333; line-height: 1.6; padding: 20px; }
+        body { background-color: #f8f9fa; color: #333; line-height: 1.6; padding: 20px; word-break: keep-all; overflow-wrap: break-word; }
         .container { max-width: 800px; margin: 40px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         h1 { font-size: 26px; margin-bottom: 10px; color: #2c3e50; }
         p.subtitle { color: #666; margin-bottom: 30px; }
@@ -15,11 +15,15 @@
         h2 { font-size: 19px; margin-bottom: 12px; border-bottom: 2px solid #edf2f7; padding-bottom: 6px; color: #34495e; }
         .card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; margin-bottom: 12px; }
         .card h3 { font-size: 18px; margin-bottom: 8px; color: #2b6cb0; }
+        section h3 { font-size: 16px; margin: 20px 0 6px; color: #2d3748; }
+        section p + p, section ul + p, section ol + p { margin-top: 8px; }
+        .card h3 { margin-top: 0; }
         ul { margin: 10px 0 0 20px; }
         li { margin-bottom: 6px; }
         .footer { text-align: center; color: #a0aec0; font-size: 14px; margin-top: 40px; }
         a { color: #3182ce; text-decoration: none; }
         a:hover { text-decoration: underline; }
+        @media (max-width: 600px) { body { padding: 12px; } .container { margin: 16px auto; padding: 24px 18px; } }
     </style>
 </head>
 <body>
@@ -55,10 +59,89 @@
             <p>안드로이드는 알림이 막히는 경로가 여러 개입니다. 앱 안의 점검 화면에서 알림 권한과 정확한 알람 권한이 켜져 있는지 바로 확인하고, 꺼져 있으면 해당 설정 화면으로 이동할 수 있습니다. 배터리 최적화는 앱에서 확인할 수 없어 끄는 자리까지 안내해 드립니다. 테스트 알림도 보내보실 수 있습니다.</p>
         </section>
 
-        <section>
+        <section id="privacy">
             <h2>개인정보처리방침 (Privacy Policy)</h2>
-            <p>리마인더 문구는 휴대폰 안에만 저장되며 개발자 서버로 전송되지 않습니다. 앱 통계와 오류 기록은 Google Firebase 로, 광고는 Google AdMob 이 처리합니다. 자세한 내용은 아래에서 확인하실 수 있습니다.</p>
-            <p style="margin-top: 8px;"><a href="https://nudge-me-privacy-policy.qhdgk71.chatgpt.site/">개인정보처리방침 전문 보기 &rsaquo;</a></p>
+            <p>개발자 qhdgk71(이하 "개발자")은 Nudge Me 앱(이하 "앱") 이용자의 개인정보를 「개인정보 보호법」 등 관련 법령에 따라 처리하며, 어떤 정보를 왜 수집하고 어떻게 보호하는지 아래와 같이 안내합니다.</p>
+
+            <h3>1. 휴대폰 안에만 저장되는 정보</h3>
+            <p>이용자가 입력한 리마인더 문구, 알림 시각, 조용한 시간대 등 앱 설정은 휴대폰 안에만 저장되며 개발자 서버로 전송되지 않습니다. 앱에는 회원가입과 로그인이 없고, 개발자는 이 정보를 볼 수 없습니다. 앱을 삭제하면 이 정보도 함께 삭제됩니다.</p>
+
+            <h3>2. 자동으로 수집되는 정보</h3>
+            <ul>
+                <li><strong>앱 통계 (Google Firebase Analytics):</strong> 앱 사용 기록(화면 조회, 기능 사용 등), 기기 정보(기종, 운영체제 버전), 앱 인스턴스 ID, 광고 ID, IP 주소로 추정한 대략적인 지역(국가·도시 수준)</li>
+                <li><strong>오류 기록 (Google Firebase Crashlytics):</strong> 앱이 비정상 종료될 때의 오류 내용, 기기 정보, 설치 식별자</li>
+                <li><strong>광고 (Google AdMob):</strong> 광고 ID, IP 주소, 기기 정보, 광고 조회·클릭 정보</li>
+            </ul>
+            <p>리마인더 문구는 위 정보에 포함되지 않습니다.</p>
+
+            <h3>3. 개인정보의 처리 목적</h3>
+            <ul>
+                <li>앱 이용 현황 파악 및 기능 개선</li>
+                <li>오류 원인 파악 및 수정</li>
+                <li>앱 내 광고 표시</li>
+                <li>문의 응대</li>
+            </ul>
+
+            <h3>4. 개인정보의 보유 기간 및 파기</h3>
+            <ul>
+                <li>앱 통계: 최대 14개월 보관 후 자동 삭제</li>
+                <li>오류 기록: 최대 90일 보관 후 자동 삭제</li>
+                <li>광고 관련 정보: Google의 정책에 따른 기간 동안 보관</li>
+                <li>문의 메일: 문의 처리가 끝난 뒤 삭제</li>
+            </ul>
+
+            <h3>5. 개인정보의 제3자 제공</h3>
+            <p>개발자는 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만 법령에 따라 수사기관 등이 적법한 절차로 요청하는 경우는 예외로 합니다.</p>
+
+            <h3>6. 개인정보 처리 위탁 및 국외 이전</h3>
+            <p>개발자는 앱 운영을 위해 아래와 같이 개인정보 처리를 위탁하며, 이 과정에서 개인정보가 국외로 이전됩니다.</p>
+            <ul>
+                <li><strong>이전받는 자:</strong> Google LLC (연락처: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>)</li>
+                <li><strong>이전되는 국가:</strong> 미국 등 Google 데이터센터 소재 국가</li>
+                <li><strong>이전 항목:</strong> 2번의 자동으로 수집되는 정보</li>
+                <li><strong>이전 목적:</strong> 앱 통계 분석, 오류 기록 수집, 광고 표시</li>
+                <li><strong>이전 시기 및 방법:</strong> 앱을 이용할 때 네트워크를 통해 전송</li>
+                <li><strong>보유 기간:</strong> 4번의 보유 기간과 같음</li>
+                <li><strong>거부 방법 및 효과:</strong> 앱을 삭제하면 이후 수집과 이전이 중단됩니다. 광고 ID는 아래 7번의 방법으로 재설정하거나 삭제할 수 있습니다.</li>
+            </ul>
+
+            <h3>7. 광고 및 광고 ID</h3>
+            <p>앱은 Google AdMob을 통해 광고를 표시합니다. Google은 광고 ID 등을 이용해 광고를 제공하고 성과를 측정할 수 있습니다. 이용자는 안드로이드 기기의 설정 &gt; 개인정보 보호(또는 Google) &gt; 광고 메뉴에서 광고 ID를 재설정하거나 삭제할 수 있습니다. 자세한 내용은 <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 광고 정책</a>에서 확인할 수 있습니다.</p>
+
+            <h3>8. 앱이 사용하는 권한</h3>
+            <ul>
+                <li><strong>알림:</strong> 리마인더 알림을 보내기 위해 사용합니다.</li>
+                <li><strong>정확한 알람:</strong> 정해진 시각에 맞춰 알림을 보내기 위해 사용합니다.</li>
+            </ul>
+            <p>이 권한들은 알림 기능에만 사용되며, 이를 통해 개인정보를 수집하지 않습니다.</p>
+
+            <h3>9. 이용자의 권리와 행사 방법</h3>
+            <p>이용자는 언제든지 자신의 개인정보에 대한 열람·정정·삭제 및 처리 정지를 요구할 수 있습니다. 앱에는 계정이 없어 개발자가 이용자 개인을 식별할 수 없으므로, 휴대폰에 저장된 정보는 앱을 삭제하거나 기기 설정에서 앱 데이터를 삭제하여 지울 수 있습니다. 그 밖의 요청은 <a href="mailto:qhdgk71@gmail.com">qhdgk71@gmail.com</a>으로 보내 주시면 10일 이내에 답변드립니다.</p>
+
+            <h3>10. 개인정보의 안전성 확보 조치</h3>
+            <p>수집되는 정보는 암호화된 통신(HTTPS)으로 전송되며, 리마인더 문구 등 이용자가 입력한 내용은 외부로 전송하지 않습니다.</p>
+
+            <h3>11. 아동의 개인정보</h3>
+            <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 알면서 수집하지 않습니다.</p>
+
+            <h3>12. 개인정보 보호책임자</h3>
+            <ul>
+                <li><strong>책임자:</strong> 개발자 qhdgk71</li>
+                <li><strong>이메일:</strong> <a href="mailto:qhdgk71@gmail.com">qhdgk71@gmail.com</a></li>
+            </ul>
+
+            <h3>13. 권익침해 구제 방법</h3>
+            <p>개인정보 침해에 대한 신고나 상담이 필요하면 아래 기관에 문의할 수 있습니다.</p>
+            <ul>
+                <li>개인정보침해신고센터: <a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a> / 국번 없이 118</li>
+                <li>개인정보분쟁조정위원회: <a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a> / 1833-6972</li>
+                <li>대검찰청: <a href="https://www.spo.go.kr" target="_blank" rel="noopener">www.spo.go.kr</a> / 국번 없이 1301</li>
+                <li>경찰청: <a href="https://ecrm.police.go.kr" target="_blank" rel="noopener">ecrm.police.go.kr</a> / 국번 없이 182</li>
+            </ul>
+
+            <h3>14. 개인정보처리방침의 변경</h3>
+            <p>이 방침이 바뀌면 이 페이지를 통해 알려 드립니다.</p>
+            <p><strong>시행일:</strong> 2026년 9월 27일</p>
         </section>
 
         <div class="footer">
