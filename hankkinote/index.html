@@ -26,7 +26,7 @@
 <main>
   <p class="lang"><a href="#en">English</a></p>
   <h1>한끼노트 개인정보처리방침</h1>
-  <p class="updated">시행일: 2026년 10월 14일</p>
+  <p class="updated">시행일: 2026년 10월 15일</p>
   <p class="notice"><strong>한끼노트에는 회원가입·로그인이 없고, 레시피·사진·장보기 기록을 운영자 서버로 보내지 않습니다.</strong>
   기록은 이용자의 기기에 저장됩니다. 다만 앱에 포함된 Google의 광고·결제·글자 인식 SDK가
   광고 제공, 결제 처리, 서비스 진단을 위해 일부 정보를 Google로 전송합니다.</p>
@@ -57,7 +57,7 @@
   <ul>
     <li>레시피 이름, 재료·수량, 조리 순서, 메모, 분류, 즐겨찾기, 참고 링크, 최근 조리일과 조리 횟수</li>
     <li>이용자가 촬영하거나 선택한 사진</li>
-    <li>장보기 목록과 완료 상태, 주간 메뉴, 보유 재료, 재료 수량 수정 내역, 이름·시간·진행 상태 등 타이머 기록, 조리·백업 설정, 이 기기에서 확인한 광고 제거 구매 상태</li>
+    <li>장보기 목록과 완료 상태, 재료 목록·보유 여부·수량 메모·선택한 유통기한·알림 설정, 이전 버전의 주간 메뉴 기록, 재료 수량 수정 내역, 이름·시간·진행 상태 등 타이머 기록, 조리·백업 설정, 이 기기에서 확인한 광고 제거 구매 상태</li>
     <li>작성 중인 레시피 초안과 사진 선택 복구 정보(사진 선택 목적·연결 정보와 당시의 작성 내용)</li>
   </ul>
 
@@ -130,7 +130,7 @@
     <li>레시피 링크 기능이 켜진 빌드에서는 레시피를 링크의 <code>#</code> 뒤에 압축해 담습니다.
     이 부분은 웹 요청에 포함되지 않지만, 링크를 받은 사람은 내용을 읽고 다시 전달할 수 있습니다.</li>
     <li>최근 조리일과 조리 횟수는 레시피 링크나 글·이미지 공유에 넣지 않습니다.
-    이용자가 직접 내보내는 백업 파일에는 완성 사진·조리 이력·주간 메뉴·보유 재료·수량 수정 내역이 포함됩니다. 작성 초안·사진 선택 복구 정보·진행 중인 타이머는 직접 백업에 포함되지 않습니다. 개인 조리 메모와 수량 수정 내역은 레시피 공유에 포함하지 않습니다.</li>
+    이용자가 직접 내보내는 백업 파일에는 완성 사진·조리 이력·재료 목록·보유 여부·수량 메모·유통기한·알림 설정·수량 수정 내역과 이전 버전의 주간 메뉴 기록이 포함됩니다. 작성 초안·사진 선택 복구 정보·진행 중인 타이머는 직접 백업에 포함되지 않습니다. 개인 조리 메모와 수량 수정 내역은 레시피 공유에 포함하지 않습니다.</li>
     <li>Android 자동 백업이 켜져 있으면 레시피·장보기·설정·초안 등 앱 데이터가 이용자의 Google 계정 백업에 포함될 수 있습니다.
     사진은 Google 계정 백업에 포함하지 않으며, 새 기기로 직접 옮기는 기기 간 전송에는 포함될 수 있습니다.
     이는 Android·Google의 기능이며 운영자는 백업 내용에 접근할 수 없습니다.</li>
@@ -150,7 +150,7 @@
   <ul>
     <li>인터넷·네트워크 상태: 광고 동의·요청, 결제, 글자 인식 SDK 진단, 영상 정보와 링크 기능</li>
     <li>진동: 조리 타이머 완료 알림</li>
-    <li>알림·알람 및 리마인더: 이용자가 시작한 타이머의 완료 알림을 앱 밖에서도 전달합니다. Android 설정에서 허용하거나 해제할 수 있습니다.</li>
+    <li>알림·알람 및 리마인더: 이용자가 시작한 타이머의 완료 알림과 선택한 재료의 유통기한 알림을 앱 밖에서도 전달합니다. 재료 알림은 보유 중일 때 기한 하루 전과 당일 오전 9시를 기준으로 예약하며, 절전 상태 등 기기 설정에 따라 늦어질 수 있습니다. Android 설정에서 허용하거나 해제할 수 있습니다.</li>
     <li>광고 ID: Google Mobile Ads SDK의 광고·측정 기능 (Android 설정에서 관리)</li>
     <li>카메라·사진: 별도의 카메라·저장소 권한을 요청하지 않고, Android 카메라 앱과 사진 선택 화면에서 이용자가 고른 사진만 받습니다.</li>
   </ul>
@@ -195,6 +195,7 @@
   <p>광고·결제·데이터 처리 방식이 바뀌면 이 문서와 시행일을 갱신해 이 페이지에 게시합니다.
   이용자에게 불리한 중요한 변경은 시행 전에 앱 업데이트 안내나 이 페이지로 미리 알립니다.</p>
   <ul>
+    <li>2026년 10월 15일: 재료 목록의 영구 보관·수정, 수량 메모·유통기한과 선택한 기한 알림, 주간 메뉴 기능 제거를 반영</li>
     <li>2026년 10월 14일: 완성 사진을 포함한 직접 백업, 주간 메뉴·보유 재료·수량 수정 내역과 타이머 알림 권한을 반영</li>
     <li>2026년 10월 9일: 맞춤형 광고 제공과 거부 방법, 국외 이전, 개인정보 보호책임자, 이용자 권리, 안전성 확보 조치, 구제 방법을 추가하고
     Google 계정 자동 백업에서 사진을 제외</li>
@@ -203,7 +204,7 @@
 
   <hr id="en" class="lang-split">
   <h1 lang="en">Tasted Privacy Policy</h1>
-  <p class="updated" lang="en">Effective: October 14, 2026 · Tasted is the English name of 한끼노트 (Hankki Note).</p>
+  <p class="updated" lang="en">Effective: October 15, 2026 · Tasted is the English name of 한끼노트 (Hankki Note).</p>
   <div lang="en">
   <p class="notice"><strong>Tasted has no sign-up or login, and your recipes, photos and grocery lists are never sent to our servers.</strong>
   They stay on your device. Google software built into the app (ads, payments and text recognition) sends some data to Google
@@ -235,7 +236,7 @@
   <ul>
     <li>Recipe names, ingredients and amounts, steps, notes, categories, favorites, reference links, last cooked date and cook count</li>
     <li>Photos you take or choose</li>
-    <li>Grocery lists and check marks, weekly meals, on-hand ingredients, quantity history, timer names and timing state, cooking and backup settings, and the Remove ads status confirmed on this device</li>
+    <li>Grocery lists and check marks, ingredient names, on-hand states, quantity notes, optional expiry dates and reminder settings, legacy weekly meal records, quantity history, timer names and timing state, cooking and backup settings, and the Remove ads status confirmed on this device</li>
     <li>Recipe drafts in progress and photo-recovery information</li>
   </ul>
 
@@ -302,7 +303,7 @@
     <li>In builds where recipe links are on, the recipe is compressed after the <code>#</code> in the link. That part is not sent in web requests,
     but anyone with the link can read and forward it.</li>
     <li>Last cooked dates and cook counts are not included in recipe links or text/image shares. Backup files you export include
-    dish photos, cooking history, weekly meals, on-hand ingredients and quantity history. Drafts, photo recovery information and active timers are not included in manual backups. Personal cooking notes and quantity history are excluded from recipe shares.</li>
+    dish photos, cooking history, ingredient names, on-hand states, quantity notes, expiry dates, reminder settings, quantity history and legacy weekly meal records. Drafts, photo recovery information and active timers are not included in manual backups. Personal cooking notes and quantity history are excluded from recipe shares.</li>
     <li>If Android backup is on, app data such as recipes, groceries, settings and drafts may be included in your Google account backup.
     Photos are not included in the Google account backup but may be moved in a direct device-to-device transfer.
     These are Android and Google features; we cannot access backup contents.</li>
@@ -321,7 +322,7 @@
   <ul>
     <li>Internet and network state: ad consent and requests, payments, text recognition diagnostics, video info and links</li>
     <li>Vibration: timer alerts while cooking</li>
-    <li>Notifications and alarms: completion alerts for timers you start, including outside the app. You can allow or disable them in Android settings.</li>
+    <li>Notifications and alarms: completion alerts for timers you start and optional ingredient date reminders, including outside the app. Ingredient reminders are scheduled for 9 AM the day before and on the date while the ingredient is on hand; battery saving and other device settings may delay delivery. You can allow or disable them in Android settings.</li>
     <li>Advertising ID: ads and measurement by the Google Mobile Ads SDK (managed in Android settings)</li>
     <li>Camera and photos: the app requests no camera or storage permission; it only receives photos you pick in the Android camera app or photo picker.</li>
   </ul>
@@ -367,6 +368,7 @@
   <p>If how we handle ads, payments or data changes, we update this page and its effective date. Important changes that affect you
   are announced in advance through app update notes or on this page.</p>
   <ul>
+    <li>October 15, 2026: updated persistent ingredient entries, quantity notes, expiry dates and optional date reminders, and removal of Weekly meals</li>
     <li>October 14, 2026: updated manual photo backups, weekly meals, on-hand ingredients, quantity history and timer notification permissions</li>
     <li>October 9, 2026: added personalized ads and choices, international transfers, privacy officer, your rights, security,
     remedies and the English version; photos excluded from Google account backups</li>
